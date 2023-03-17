@@ -55,6 +55,6 @@ class IssLocationControllerTest {
 		ResponseEntity<ISSLocation> response = issLocationController.getCurrentLocation();
 
 		assertEquals(HttpStatus.OK, response.getStatusCode());
-		assertEquals(location, response.getBody());
+		assertEquals(location.toString(), response.getBody().toString());
 	}
 }
