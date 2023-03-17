@@ -45,7 +45,7 @@ If the API is down or unreachable, the response object will have the following v
   "latitude": 0.0,
   "longitude": 0.0
 }
-If the service encounters an unexpected error, it will return a 500 Internal Server Error response.
+If the service encounters an unexpected error, it will return a (0.0,0.0).
 
 Error Handling
 The service handles the following error scenarios:
