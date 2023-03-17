@@ -49,8 +49,8 @@ If the service encounters an unexpected error, it will return a 500 Internal Ser
 
 Error Handling
 The service handles the following error scenarios:
-If the public API is down or unreachable, the service will retry the API call once. If the retry succeeds, the service will return the current ISS location. If the retry fails, the service will check if it has a last known location for the ISS. If it does, it will return the last known location. If it doesn't, it will return (0, 0).
-If the service encounters an unexpected error, it will return a 500 Internal Server Error response.
+If the public API is down or unreachable, the service will retry the API call once. If the retry succeeds, the service will return the current ISS location. If the retry fails, the service will check if it has a last known location for the ISS. If it does, it will return the last known location. If it doesn't, it will return (0.0, 0.0).
+If the service encounters an unexpected error, it will return a (0.0,0.0).
 
 Logging
 The service uses the log4j2 logging API to log messages. The log level can be configured using the logging.level property in the log4j2.xml file.
