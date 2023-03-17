@@ -1,5 +1,0 @@
-package com.location.service;
-
-public interface LocationService {
-
-}
