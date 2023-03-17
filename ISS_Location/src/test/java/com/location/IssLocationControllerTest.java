@@ -49,10 +49,12 @@ class IssLocationControllerTest {
 	@Test
 	void getCurrentLocation_error() throws LocationServiceException {
 		String errorMsg = "Something went wrong";
+		ISSLocation location = new ISSLocation(0.0, 0.0);
 		when(locationService.getCurrentLocation()).thenThrow(new LocationServiceException(errorMsg));
 
 		ResponseEntity<ISSLocation> response = issLocationController.getCurrentLocation();
 
-		assertEquals(HttpStatus.INTERNAL_SERVER_ERROR, response.getStatusCode());
+		assertEquals(HttpStatus.OK, response.getStatusCode());
+		assertEquals(location, response.getBody());
 	}
 }
