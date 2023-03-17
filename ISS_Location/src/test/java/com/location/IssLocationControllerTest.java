@@ -31,11 +31,11 @@ class IssLocationControllerTest {
 	 * @throws LocationServiceException
 	 */
 	@Test
-	void getCurrentLocation1() throws LocationServiceException {
+	void getCurrentLocation() throws LocationServiceException {
 		ISSLocation location = new ISSLocation(51.5072, -0.1276);
 		when(locationService.getCurrentLocation()).thenReturn(location);
 
-		ResponseEntity<ISSLocation> response = issLocationController.getCurrentLocation1();
+		ResponseEntity<ISSLocation> response = issLocationController.getCurrentLocation();
 
 		assertEquals(HttpStatus.OK, response.getStatusCode());
 		assertEquals(location, response.getBody());
@@ -47,11 +47,11 @@ class IssLocationControllerTest {
 	 * @throws LocationServiceException
 	 */
 	@Test
-	void getCurrentLocation1_error() throws LocationServiceException {
+	void getCurrentLocation_error() throws LocationServiceException {
 		String errorMsg = "Something went wrong";
 		when(locationService.getCurrentLocation()).thenThrow(new LocationServiceException(errorMsg));
 
-		ResponseEntity<ISSLocation> response = issLocationController.getCurrentLocation1();
+		ResponseEntity<ISSLocation> response = issLocationController.getCurrentLocation();
 
 		assertEquals(HttpStatus.INTERNAL_SERVER_ERROR, response.getStatusCode());
 	}

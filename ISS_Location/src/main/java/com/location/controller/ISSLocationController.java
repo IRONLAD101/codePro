@@ -29,7 +29,7 @@ public class ISSLocationController {
      * @return The current location of the International Space Station
      */
 	@GetMapping(path = "/currentISSLocation")
-	public ResponseEntity<ISSLocation> getCurrentLocation1(){
+	public ResponseEntity<ISSLocation> getCurrentLocation(){
 
         logger.debug("Getting current location of ISS");
         try {
