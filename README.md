@@ -1,9 +1,9 @@
 International Space Station Location Service
 
-Overview
+Overview:
 The International Space Station Location Service is a REST API that provides the current latitude and longitude of the International Space Station (ISS). The service retrieves the location data from a public API and handles scenarios where the API is down or unreachable.
 
-Technology Stack
+Technology Stack:
 The service is built using the following technologies:
 •	Java 1.8
 •	Spring Boot 3.0.4
@@ -11,12 +11,12 @@ The service is built using the following technologies:
 •	JUnit 4.13.2
 •	Mockito 4.8.1
 
-Prerequisites
+Prerequisites:
 To run this project, you need to have the following software installed:
 •	Java 8 or later
 •	Apache Maven 3.6 or later
 
-Building and Running the Service
+Building and Running the Service:
 To build and run the service, follow these steps:
 1.	Clone the repository from GitHub:
 git clone https://github.com/IRONLAD101/codePro.git
@@ -27,7 +27,7 @@ mvn clean package
  	mvn spring-boot:run
 4.	Access the service at http://localhost:8080/iss/location
 
-API Documentation
+API Documentation:
 The service provides a single API endpoint:
 Request:
 [GET] /location/currentISSLocation
@@ -47,14 +47,14 @@ If the API is down or unreachable, the response object will have the following v
 }
 If the service encounters an unexpected error, it will return a (0.0,0.0).
 
-Error Handling
+Error Handling:
 The service handles the following error scenarios:
 If the public API is down or unreachable, the service will retry the API call once. If the retry succeeds, the service will return the current ISS location. If the retry fails, the service will check if it has a last known location for the ISS. If it does, it will return the last known location. If it doesn't, it will return (0.0, 0.0).
 If the service encounters an unexpected error, it will return a (0.0,0.0).
 
-Logging
+Logging:
 The service uses the log4j2 logging API to log messages. The log level can be configured using the logging.level property in the log4j2.xml file.
 
-Testing
+Testing:
 The project includes unit tests for the controller and service classes, with a minimum test coverage of 75%. The tests use Mockito to mock the external API and test the different scenarios. To run the tests, use the following command:
 mvn test
