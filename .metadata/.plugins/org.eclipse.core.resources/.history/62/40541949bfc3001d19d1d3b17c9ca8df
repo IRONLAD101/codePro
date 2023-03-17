@@ -1,0 +1,12 @@
+package com.location.service;
+
+import com.location.response.ISSLocation;
+
+public class LocationServiceImpl implements LocationService {
+
+	public ISSLocation getCurrentLocation() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

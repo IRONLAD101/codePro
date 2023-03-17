@@ -1,0 +1,484 @@
+2023-03-16 21:52:26,540 INFO c.l.IssLocationApplication [restartedMain] Starting IssLocationApplication using Java 17.0.4.1 with PID 6136 (C:\Users\HP\Documents\casestudy\ISS_Location\target\classes started by HP in C:\Users\HP\Documents\casestudy\ISS_Location)
+2023-03-16 21:52:26,562 DEBUG c.l.IssLocationApplication [restartedMain] Running with Spring Boot v3.0.4, Spring v6.0.6
+2023-03-16 21:52:26,564 INFO c.l.IssLocationApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-03-16 21:52:29,657 INFO c.l.IssLocationApplication [restartedMain] Started IssLocationApplication in 3.568 seconds (process running for 4.649)
+2023-03-16 21:52:37,686 DEBUG c.l.c.ISSLocationController [http-nio-8080-exec-1] Getting current location of ISS...
+2023-03-16 21:52:37,686 DEBUG c.l.s.LocationServiceImpl [http-nio-8080-exec-1] Retrieving current location of ISS from API...
+2023-03-16 21:52:39,542 DEBUG c.l.s.LocationServiceImpl [http-nio-8080-exec-1] Retrieved current location of ISS from API: [latitude=47.776431330097, longitude=126.9845092405]
+2023-03-16 21:53:38,199 INFO c.l.IssLocationApplication [restartedMain] Starting IssLocationApplication using Java 17.0.4.1 with PID 6136 (C:\Users\HP\Documents\casestudy\ISS_Location\target\classes started by HP in C:\Users\HP\Documents\casestudy\ISS_Location)
+2023-03-16 21:53:38,201 DEBUG c.l.IssLocationApplication [restartedMain] Running with Spring Boot v3.0.4, Spring v6.0.6
+2023-03-16 21:53:38,202 INFO c.l.IssLocationApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-03-16 21:53:38,933 INFO c.l.IssLocationApplication [restartedMain] Started IssLocationApplication in 0.793 seconds (process running for 73.925)
+2023-03-16 21:53:46,553 INFO c.l.IssLocationApplication [restartedMain] Starting IssLocationApplication using Java 17.0.4.1 with PID 6136 (C:\Users\HP\Documents\casestudy\ISS_Location\target\classes started by HP in C:\Users\HP\Documents\casestudy\ISS_Location)
+2023-03-16 21:53:46,555 DEBUG c.l.IssLocationApplication [restartedMain] Running with Spring Boot v3.0.4, Spring v6.0.6
+2023-03-16 21:53:46,555 INFO c.l.IssLocationApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-03-16 21:53:47,150 INFO c.l.IssLocationApplication [restartedMain] Started IssLocationApplication in 0.652 seconds (process running for 82.142)
+2023-03-16 21:53:59,442 DEBUG c.l.c.ISSLocationController [http-nio-8080-exec-2] Getting current location of ISS...
+2023-03-16 21:53:59,442 DEBUG c.l.s.LocationServiceImpl [http-nio-8080-exec-2] Retrieving current location of ISS from API...
+2023-03-16 21:54:00,333 DEBUG c.l.s.LocationServiceImpl [http-nio-8080-exec-2] Retrieved current location of ISS from API: [latitude=45.518093104652, longitude=133.51959511508]
+2023-03-16 21:54:29,357 INFO c.l.IssLocationApplication [restartedMain] Starting IssLocationApplication using Java 17.0.4.1 with PID 6136 (C:\Users\HP\Documents\casestudy\ISS_Location\target\classes started by HP in C:\Users\HP\Documents\casestudy\ISS_Location)
+2023-03-16 21:54:29,359 DEBUG c.l.IssLocationApplication [restartedMain] Running with Spring Boot v3.0.4, Spring v6.0.6
+2023-03-16 21:54:29,360 INFO c.l.IssLocationApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-03-16 21:54:30,018 INFO c.l.IssLocationApplication [restartedMain] Started IssLocationApplication in 0.746 seconds (process running for 125.01)
+2023-03-16 21:54:37,406 DEBUG c.l.c.ISSLocationController [http-nio-8080-exec-2] Getting current location of ISS...
+2023-03-16 21:54:37,406 DEBUG c.l.s.LocationServiceImpl [http-nio-8080-exec-2] Retrieving current location of ISS from API...
+2023-03-16 21:54:38,295 ERROR c.l.s.LocationServiceImpl [http-nio-8080-exec-2] Error retrieving current location of ISS from API: / by zero
+2023-03-16 21:54:38,297 ERROR c.l.c.ISSLocationController [http-nio-8080-exec-2] Error getting current location of ISS: Error retrieving current location of ISS from API
+2023-03-16 21:55:06,095 INFO c.l.IssLocationApplication [restartedMain] Starting IssLocationApplication using Java 17.0.4.1 with PID 6136 (C:\Users\HP\Documents\casestudy\ISS_Location\target\classes started by HP in C:\Users\HP\Documents\casestudy\ISS_Location)
+2023-03-16 21:55:06,097 DEBUG c.l.IssLocationApplication [restartedMain] Running with Spring Boot v3.0.4, Spring v6.0.6
+2023-03-16 21:55:06,097 INFO c.l.IssLocationApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-03-16 21:55:06,545 ERROR o.s.b.SpringApplication [restartedMain] Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'ISSLocationController': Unsatisfied dependency expressed through field 'locationService': Error creating bean with name 'locationServiceImpl' defined in file [C:\Users\HP\Documents\casestudy\ISS_Location\target\classes\com\location\service\LocationServiceImpl.class]: Failed to instantiate [com.location.service.LocationServiceImpl]: Constructor threw exception
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:712) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:692) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:133) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:481) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1408) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:961) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:917) ~[spring-context-6.0.6.jar:6.0.6]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584) ~[spring-context-6.0.6.jar:6.0.6]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.0.4.jar:3.0.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732) ~[spring-boot-3.0.4.jar:3.0.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434) ~[spring-boot-3.0.4.jar:3.0.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:310) ~[spring-boot-3.0.4.jar:3.0.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1304) ~[spring-boot-3.0.4.jar:3.0.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1293) ~[spring-boot-3.0.4.jar:3.0.4]
+	at com.location.IssLocationApplication.main(IssLocationApplication.java:13) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-3.0.4.jar:3.0.4]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'locationServiceImpl' defined in file [C:\Users\HP\Documents\casestudy\ISS_Location\target\classes\com\location\service\LocationServiceImpl.class]: Failed to instantiate [com.location.service.LocationServiceImpl]: Constructor threw exception
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1306) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1198) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:561) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1405) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1325) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:709) ~[spring-beans-6.0.6.jar:6.0.6]
+	... 25 more
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.location.service.LocationServiceImpl]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:223) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1300) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1198) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:561) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1405) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1325) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:709) ~[spring-beans-6.0.6.jar:6.0.6]
+	... 25 more
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	Syntax error on token "=", Expression expected after this token
+	The value for annotation attribute Retryable.maxAttempts must be a constant expression
+
+	at com.location.service.LocationServiceImpl.<init>(LocationServiceImpl.java:30) ~[classes/:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[?:?]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:197) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1300) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1198) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:561) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1405) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1325) ~[spring-beans-6.0.6.jar:6.0.6]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:709) ~[spring-beans-6.0.6.jar:6.0.6]
+	... 25 more
+2023-03-16 21:55:11,090 INFO c.l.IssLocationApplication [restartedMain] Starting IssLocationApplication using Java 17.0.4.1 with PID 6136 (C:\Users\HP\Documents\casestudy\ISS_Location\target\classes started by HP in C:\Users\HP\Documents\casestudy\ISS_Location)
+2023-03-16 21:55:11,091 DEBUG c.l.IssLocationApplication [restartedMain] Running with Spring Boot v3.0.4, Spring v6.0.6
+2023-03-16 21:55:11,092 INFO c.l.IssLocationApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-03-16 21:55:11,606 INFO c.l.IssLocationApplication [restartedMain] Started IssLocationApplication in 0.577 seconds (process running for 166.598)
+2023-03-16 21:55:35,184 DEBUG c.l.c.ISSLocationController [http-nio-8080-exec-2] Getting current location of ISS...
+2023-03-16 21:55:35,184 DEBUG c.l.s.LocationServiceImpl [http-nio-8080-exec-2] Retrieving current location of ISS from API...
+2023-03-16 21:55:36,105 ERROR c.l.s.LocationServiceImpl [http-nio-8080-exec-2] Error retrieving current location of ISS from API: / by zero
+2023-03-16 21:55:36,106 ERROR c.l.c.ISSLocationController [http-nio-8080-exec-2] Error getting current location of ISS: Error retrieving current location of ISS from API
+2023-03-16 22:07:53,974 INFO c.l.IssLocationApplication [restartedMain] Starting IssLocationApplication using Java 17.0.4.1 with PID 6136 (C:\Users\HP\Documents\casestudy\ISS_Location\target\classes started by HP in C:\Users\HP\Documents\casestudy\ISS_Location)
+2023-03-16 22:07:53,975 DEBUG c.l.IssLocationApplication [restartedMain] Running with Spring Boot v3.0.4, Spring v6.0.6
+2023-03-16 22:07:53,975 INFO c.l.IssLocationApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-03-16 22:07:54,651 INFO c.l.IssLocationApplication [restartedMain] Started IssLocationApplication in 0.739 seconds (process running for 929.643)
+2023-03-16 22:07:59,225 INFO c.l.IssLocationApplication [restartedMain] Starting IssLocationApplication using Java 17.0.4.1 with PID 6136 (C:\Users\HP\Documents\casestudy\ISS_Location\target\classes started by HP in C:\Users\HP\Documents\casestudy\ISS_Location)
+2023-03-16 22:07:59,226 DEBUG c.l.IssLocationApplication [restartedMain] Running with Spring Boot v3.0.4, Spring v6.0.6
+2023-03-16 22:07:59,227 INFO c.l.IssLocationApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-03-16 22:07:59,662 INFO c.l.IssLocationApplication [restartedMain] Started IssLocationApplication in 0.478 seconds (process running for 934.654)
+2023-03-16 22:08:10,613 DEBUG c.l.c.ISSLocationController [http-nio-8080-exec-2] Getting current location of ISS...
+2023-03-16 22:08:10,640 DEBUG c.l.s.LocationServiceImpl [http-nio-8080-exec-2] Retrieving current location of ISS from API...
+2023-03-16 22:08:11,541 ERROR c.l.s.LocationServiceImpl [http-nio-8080-exec-2] Error retrieving current location of ISS from API: / by zero
+2023-03-16 22:08:12,553 DEBUG c.l.s.LocationServiceImpl [http-nio-8080-exec-2] Retrieving current location of ISS from API...
+2023-03-16 22:08:12,869 ERROR c.l.s.LocationServiceImpl [http-nio-8080-exec-2] Error retrieving current location of ISS from API: / by zero
+2023-03-16 22:08:12,871 DEBUG c.l.s.LocationServiceImpl [http-nio-8080-exec-2] Returning default location of (0,0)
+2023-03-16 22:09:02,305 INFO c.l.IssLocationApplication [restartedMain] Starting IssLocationApplication using Java 17.0.4.1 with PID 6136 (C:\Users\HP\Documents\casestudy\ISS_Location\target\classes started by HP in C:\Users\HP\Documents\casestudy\ISS_Location)
+2023-03-16 22:09:02,306 DEBUG c.l.IssLocationApplication [restartedMain] Running with Spring Boot v3.0.4, Spring v6.0.6
+2023-03-16 22:09:02,306 INFO c.l.IssLocationApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-03-16 22:09:02,748 INFO c.l.IssLocationApplication [restartedMain] Started IssLocationApplication in 0.487 seconds (process running for 997.74)
+2023-03-16 22:09:08,949 DEBUG c.l.c.ISSLocationController [http-nio-8080-exec-2] Getting current location of ISS...
+2023-03-16 22:09:08,952 DEBUG c.l.s.LocationServiceImpl [http-nio-8080-exec-2] Retrieving current location of ISS from API...
+2023-03-16 22:09:09,860 DEBUG c.l.s.LocationServiceImpl [http-nio-8080-exec-2] Retrieved current location of ISS from API: [latitude=4.9263927550778, longitude=179.03960524073]
+2023-03-16 22:09:23,568 INFO c.l.IssLocationApplication [restartedMain] Starting IssLocationApplication using Java 17.0.4.1 with PID 6136 (C:\Users\HP\Documents\casestudy\ISS_Location\target\classes started by HP in C:\Users\HP\Documents\casestudy\ISS_Location)
+2023-03-16 22:09:23,569 DEBUG c.l.IssLocationApplication [restartedMain] Running with Spring Boot v3.0.4, Spring v6.0.6
+2023-03-16 22:09:23,569 INFO c.l.IssLocationApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-03-16 22:09:23,967 INFO c.l.IssLocationApplication [restartedMain] Started IssLocationApplication in 0.441 seconds (process running for 1018.958)
+2023-03-16 22:40:42,709 DEBUG c.l.s.LocationServiceImpl [main] Retrieving current location of ISS from API...
+2023-03-16 22:40:42,749 DEBUG c.l.s.LocationServiceImpl [main] Retrieved current location of ISS from API: [latitude=10.0, longitude=20.0]
+2023-03-16 22:40:42,826 DEBUG c.l.s.LocationServiceImpl [main] Retrieving current location of ISS from API...
+2023-03-16 22:40:42,828 ERROR c.l.s.LocationServiceImpl [main] Error retrieving current location of ISS from API: First exception
+2023-03-16 22:40:42,844 DEBUG c.l.s.LocationServiceImpl [main] Retrieving current location of ISS from API...
+2023-03-16 22:40:42,846 ERROR c.l.s.LocationServiceImpl [main] Error retrieving current location of ISS from API: First exception
+2023-03-16 22:40:42,853 DEBUG c.l.s.LocationServiceImpl [main] Returning default location of (0,0)
+2023-03-16 22:40:42,861 DEBUG c.l.s.LocationServiceImpl [main] Returning last known location of ISS: [latitude=10.0, longitude=20.0]
+2023-03-16 22:40:42,924 DEBUG c.l.c.ISSLocationController [main] Getting current location of ISS...
+2023-03-16 22:40:42,935 DEBUG c.l.c.ISSLocationController [main] Getting current location of ISS...
+2023-03-16 22:40:42,938 ERROR c.l.c.ISSLocationController [main] Error getting current location of ISS: Something went wrong
+2023-03-16 22:41:34,610 DEBUG c.l.s.LocationServiceImpl [main] Retrieving current location of ISS from API...
+2023-03-16 22:41:34,646 DEBUG c.l.s.LocationServiceImpl [main] Retrieved current location of ISS from API: [latitude=10.0, longitude=20.0]
+2023-03-16 22:41:34,711 DEBUG c.l.s.LocationServiceImpl [main] Retrieving current location of ISS from API...
+2023-03-16 22:41:34,713 ERROR c.l.s.LocationServiceImpl [main] Error retrieving current location of ISS from API: First exception
+2023-03-16 22:41:34,731 DEBUG c.l.s.LocationServiceImpl [main] Retrieving current location of ISS from API...
+2023-03-16 22:41:34,733 ERROR c.l.s.LocationServiceImpl [main] Error retrieving current location of ISS from API: First exception
+2023-03-16 22:41:34,740 DEBUG c.l.s.LocationServiceImpl [main] Returning default location of (0,0)
+2023-03-16 22:41:34,745 DEBUG c.l.s.LocationServiceImpl [main] Returning last known location of ISS: [latitude=10.0, longitude=20.0]
+2023-03-16 22:41:34,828 DEBUG c.l.c.ISSLocationController [main] Getting current location of ISS...
+2023-03-16 22:41:34,846 DEBUG c.l.c.ISSLocationController [main] Getting current location of ISS...
+2023-03-16 22:41:34,848 ERROR c.l.c.ISSLocationController [main] Error getting current location of ISS: Something went wrong
+2023-03-16 22:43:01,099 DEBUG c.l.s.LocationServiceImpl [main] Retrieving current location of ISS from API...
+2023-03-16 22:43:01,142 DEBUG c.l.s.LocationServiceImpl [main] Retrieved current location of ISS from API: [latitude=10.0, longitude=20.0]
+2023-03-16 22:43:01,206 DEBUG c.l.s.LocationServiceImpl [main] Retrieving current location of ISS from API...
+2023-03-16 22:43:01,209 ERROR c.l.s.LocationServiceImpl [main] Error retrieving current location of ISS from API: First exception
+2023-03-16 22:43:01,231 DEBUG c.l.s.LocationServiceImpl [main] Retrieving current location of ISS from API...
+2023-03-16 22:43:01,232 ERROR c.l.s.LocationServiceImpl [main] Error retrieving current location of ISS from API: First exception
+2023-03-16 22:43:01,239 DEBUG c.l.s.LocationServiceImpl [main] Returning default location of (0,0)
+2023-03-16 22:43:01,246 DEBUG c.l.s.LocationServiceImpl [main] Returning last known location of ISS: [latitude=10.0, longitude=20.0]
+2023-03-16 22:43:01,327 DEBUG c.l.c.ISSLocationController [main] Getting current location of ISS...
+2023-03-16 22:43:01,343 DEBUG c.l.c.ISSLocationController [main] Getting current location of ISS...
+2023-03-16 22:43:01,345 ERROR c.l.c.ISSLocationController [main] Error getting current location of ISS: Something went wrong
+2023-03-16 22:43:39,256 DEBUG c.l.s.LocationServiceImpl [main] Retrieving current location of ISS from API...
+2023-03-16 22:43:39,294 DEBUG c.l.s.LocationServiceImpl [main] Retrieved current location of ISS from API: [latitude=10.0, longitude=20.0]
+2023-03-16 22:43:39,349 DEBUG c.l.s.LocationServiceImpl [main] Retrieving current location of ISS from API...
+2023-03-16 22:43:39,352 ERROR c.l.s.LocationServiceImpl [main] Error retrieving current location of ISS from API: First exception
+2023-03-16 22:43:39,364 DEBUG c.l.s.LocationServiceImpl [main] Retrieving current location of ISS from API...
+2023-03-16 22:43:39,366 ERROR c.l.s.LocationServiceImpl [main] Error retrieving current location of ISS from API: First exception
+2023-03-16 22:43:39,373 DEBUG c.l.s.LocationServiceImpl [main] Returning default location of (0,0)
+2023-03-16 22:43:39,379 DEBUG c.l.s.LocationServiceImpl [main] Returning last known location of ISS: [latitude=10.0, longitude=20.0]
+2023-03-16 22:43:39,447 DEBUG c.l.c.ISSLocationController [main] Getting current location of ISS...
+2023-03-16 22:43:39,463 DEBUG c.l.c.ISSLocationController [main] Getting current location of ISS...
+2023-03-16 22:43:39,466 ERROR c.l.c.ISSLocationController [main] Error getting current location of ISS: Something went wrong
+2023-03-16 22:48:28,440 INFO c.l.IssLocationApplication [restartedMain] Starting IssLocationApplication using Java 17.0.4.1 with PID 6136 (C:\Users\HP\Documents\casestudy\ISS_Location\target\classes started by HP in C:\Users\HP\Documents\casestudy\ISS_Location)
+2023-03-16 22:48:28,441 DEBUG c.l.IssLocationApplication [restartedMain] Running with Spring Boot v3.0.4, Spring v6.0.6
+2023-03-16 22:48:28,441 INFO c.l.IssLocationApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-03-16 22:48:28,962 INFO c.l.IssLocationApplication [restartedMain] Started IssLocationApplication in 0.568 seconds (process running for 3364.006)
+2023-03-16 22:48:35,534 INFO c.l.IssLocationApplication [restartedMain] Starting IssLocationApplication using Java 17.0.4.1 with PID 6136 (C:\Users\HP\Documents\casestudy\ISS_Location\target\classes started by HP in C:\Users\HP\Documents\casestudy\ISS_Location)
+2023-03-16 22:48:35,535 DEBUG c.l.IssLocationApplication [restartedMain] Running with Spring Boot v3.0.4, Spring v6.0.6
+2023-03-16 22:48:35,535 INFO c.l.IssLocationApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-03-16 22:48:35,846 INFO c.l.IssLocationApplication [restartedMain] Started IssLocationApplication in 0.344 seconds (process running for 3370.89)
+2023-03-16 22:48:45,483 INFO c.l.IssLocationApplication [restartedMain] Starting IssLocationApplication using Java 17.0.4.1 with PID 6136 (C:\Users\HP\Documents\casestudy\ISS_Location\target\classes started by HP in C:\Users\HP\Documents\casestudy\ISS_Location)
+2023-03-16 22:48:45,484 DEBUG c.l.IssLocationApplication [restartedMain] Running with Spring Boot v3.0.4, Spring v6.0.6
+2023-03-16 22:48:45,484 INFO c.l.IssLocationApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-03-16 22:48:45,841 INFO c.l.IssLocationApplication [restartedMain] Started IssLocationApplication in 0.393 seconds (process running for 3380.885)
+2023-03-16 22:48:59,615 INFO c.l.IssLocationApplication [restartedMain] Starting IssLocationApplication using Java 17.0.4.1 with PID 11384 (C:\Users\HP\Documents\casestudy\ISS_Location\target\classes started by HP in C:\Users\HP\Documents\casestudy\ISS_Location)
+2023-03-16 22:48:59,648 DEBUG c.l.IssLocationApplication [restartedMain] Running with Spring Boot v3.0.4, Spring v6.0.6
+2023-03-16 22:48:59,652 INFO c.l.IssLocationApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-03-16 22:49:05,855 INFO c.l.IssLocationApplication [restartedMain] Started IssLocationApplication in 7.851 seconds (process running for 10.953)
+2023-03-16 22:49:10,908 DEBUG c.l.c.ISSLocationController [http-nio-8080-exec-1] Getting current location of ISS...
+2023-03-16 22:49:10,941 DEBUG c.l.s.LocationServiceImpl [http-nio-8080-exec-1] Retrieving current location of ISS from API...
+2023-03-16 22:49:13,000 DEBUG c.l.s.LocationServiceImpl [http-nio-8080-exec-1] Retrieved current location of ISS from API: [latitude=-24.243878153721, longitude=-28.002814822413]
+2023-03-16 22:54:44,259 DEBUG c.l.s.LocationServiceImpl [main] Retrieving current location of ISS from API...
+2023-03-16 22:54:44,292 DEBUG c.l.s.LocationServiceImpl [main] Retrieved current location of ISS from API: [latitude=10.0, longitude=20.0]
+2023-03-16 22:54:44,344 DEBUG c.l.s.LocationServiceImpl [main] Retrieving current location of ISS from API...
+2023-03-16 22:54:44,347 ERROR c.l.s.LocationServiceImpl [main] Error retrieving current location of ISS from API: First exception
+2023-03-16 22:54:44,367 DEBUG c.l.s.LocationServiceImpl [main] Retrieving current location of ISS from API...
+2023-03-16 22:54:44,368 ERROR c.l.s.LocationServiceImpl [main] Error retrieving current location of ISS from API: First exception
+2023-03-16 22:54:44,374 DEBUG c.l.s.LocationServiceImpl [main] Returning default location of (0,0)
+2023-03-16 22:54:44,382 DEBUG c.l.s.LocationServiceImpl [main] Returning last known location of ISS: [latitude=10.0, longitude=20.0]
+2023-03-16 22:54:44,461 DEBUG c.l.c.ISSLocationController [main] Getting current location of ISS...
+2023-03-16 22:54:44,475 DEBUG c.l.c.ISSLocationController [main] Getting current location of ISS...
+2023-03-16 22:54:44,477 ERROR c.l.c.ISSLocationController [main] Error getting current location of ISS: Something went wrong
+2023-03-16 22:55:28,277 DEBUG c.l.s.LocationServiceImpl [main] Retrieving current location of ISS from API...
+2023-03-16 22:55:28,310 DEBUG c.l.s.LocationServiceImpl [main] Retrieved current location of ISS from API: [latitude=10.0, longitude=20.0]
+2023-03-16 22:55:28,378 DEBUG c.l.s.LocationServiceImpl [main] Retrieving current location of ISS from API...
+2023-03-16 22:55:28,381 ERROR c.l.s.LocationServiceImpl [main] Error retrieving current location of ISS from API: First exception
+2023-03-16 22:55:28,398 DEBUG c.l.s.LocationServiceImpl [main] Retrieving current location of ISS from API...
+2023-03-16 22:55:28,400 ERROR c.l.s.LocationServiceImpl [main] Error retrieving current location of ISS from API: First exception
+2023-03-16 22:55:28,408 DEBUG c.l.s.LocationServiceImpl [main] Returning default location of (0,0)
+2023-03-16 22:55:28,415 DEBUG c.l.s.LocationServiceImpl [main] Returning last known location of ISS: [latitude=10.0, longitude=20.0]
+2023-03-16 22:55:28,506 DEBUG c.l.c.ISSLocationController [main] Getting current location of ISS...
+2023-03-16 22:55:28,527 DEBUG c.l.c.ISSLocationController [main] Getting current location of ISS...
+2023-03-16 22:55:28,531 ERROR c.l.c.ISSLocationController [main] Error getting current location of ISS: Something went wrong
+2023-03-16 22:57:51,495 DEBUG c.l.s.LocationServiceImpl [main] Retrieving current location of ISS from API...
+2023-03-16 22:57:51,538 DEBUG c.l.s.LocationServiceImpl [main] Retrieved current location of ISS from API: [latitude=10.0, longitude=20.0]
+2023-03-16 22:57:51,598 DEBUG c.l.s.LocationServiceImpl [main] Retrieving current location of ISS from API...
+2023-03-16 22:57:51,600 ERROR c.l.s.LocationServiceImpl [main] Error retrieving current location of ISS from API: First exception
+2023-03-16 22:57:51,616 DEBUG c.l.s.LocationServiceImpl [main] Retrieving current location of ISS from API...
+2023-03-16 22:57:51,617 ERROR c.l.s.LocationServiceImpl [main] Error retrieving current location of ISS from API: First exception
+2023-03-16 22:57:51,624 DEBUG c.l.s.LocationServiceImpl [main] Returning default location of (0,0)
+2023-03-16 22:57:51,632 DEBUG c.l.s.LocationServiceImpl [main] Returning last known location of ISS: [latitude=10.0, longitude=20.0]
+2023-03-16 22:57:51,714 DEBUG c.l.c.ISSLocationController [main] Getting current location of ISS...
+2023-03-16 22:57:51,729 DEBUG c.l.c.ISSLocationController [main] Getting current location of ISS...
+2023-03-16 22:57:51,733 ERROR c.l.c.ISSLocationController [main] Error getting current location of ISS: Something went wrong
+2023-03-16 22:59:34,080 DEBUG c.l.s.LocationServiceImpl [main] Retrieving current location of ISS from API...
+2023-03-16 22:59:34,130 DEBUG c.l.s.LocationServiceImpl [main] Retrieved current location of ISS from API: [latitude=10.0, longitude=20.0]
+2023-03-16 22:59:34,202 DEBUG c.l.s.LocationServiceImpl [main] Retrieving current location of ISS from API...
+2023-03-16 22:59:34,205 ERROR c.l.s.LocationServiceImpl [main] Error retrieving current location of ISS from API: First exception
+2023-03-16 22:59:34,229 DEBUG c.l.s.LocationServiceImpl [main] Retrieving current location of ISS from API...
+2023-03-16 22:59:34,233 ERROR c.l.s.LocationServiceImpl [main] Error retrieving current location of ISS from API: First exception
+2023-03-16 22:59:34,248 DEBUG c.l.s.LocationServiceImpl [main] Returning default location of (0,0)
+2023-03-16 22:59:34,258 DEBUG c.l.s.LocationServiceImpl [main] Returning last known location of ISS: [latitude=10.0, longitude=20.0]
+2023-03-16 22:59:34,338 DEBUG c.l.c.ISSLocationController [main] Getting current location of ISS...
+2023-03-16 22:59:34,355 DEBUG c.l.c.ISSLocationController [main] Getting current location of ISS...
+2023-03-16 22:59:34,358 ERROR c.l.c.ISSLocationController [main] Error getting current location of ISS: Something went wrong
+2023-03-16 23:00:15,627 DEBUG c.l.s.LocationServiceImpl [main] Retrieving current location of ISS from API...
+2023-03-16 23:00:15,672 DEBUG c.l.s.LocationServiceImpl [main] Retrieved current location of ISS from API: [latitude=10.0, longitude=20.0]
+2023-03-16 23:00:15,738 DEBUG c.l.s.LocationServiceImpl [main] Retrieving current location of ISS from API...
+2023-03-16 23:00:15,742 ERROR c.l.s.LocationServiceImpl [main] Error retrieving current location of ISS from API: First exception
+2023-03-16 23:00:15,765 DEBUG c.l.s.LocationServiceImpl [main] Retrieving current location of ISS from API...
+2023-03-16 23:00:15,769 ERROR c.l.s.LocationServiceImpl [main] Error retrieving current location of ISS from API: First exception
+2023-03-16 23:00:15,780 DEBUG c.l.s.LocationServiceImpl [main] Returning default location of (0,0)
+2023-03-16 23:00:15,790 DEBUG c.l.s.LocationServiceImpl [main] Returning last known location of ISS: [latitude=10.0, longitude=20.0]
+2023-03-16 23:00:15,860 DEBUG c.l.c.ISSLocationController [main] Getting current location of ISS...
+2023-03-16 23:00:15,874 DEBUG c.l.c.ISSLocationController [main] Getting current location of ISS...
+2023-03-16 23:00:15,876 ERROR c.l.c.ISSLocationController [main] Error getting current location of ISS: Something went wrong
+2023-03-16 23:02:55,459 DEBUG c.l.s.LocationServiceImpl [main] Retrieving current location of ISS from API...
+2023-03-16 23:02:55,492 DEBUG c.l.s.LocationServiceImpl [main] Retrieved current location of ISS from API: [latitude=10.0, longitude=20.0]
+2023-03-16 23:02:55,546 DEBUG c.l.s.LocationServiceImpl [main] Retrieving current location of ISS from API...
+2023-03-16 23:02:55,549 ERROR c.l.s.LocationServiceImpl [main] Error retrieving current location of ISS from API: Exception while connecting ISS api
+2023-03-16 23:02:55,568 DEBUG c.l.s.LocationServiceImpl [main] Retrieving current location of ISS from API...
+2023-03-16 23:02:55,570 ERROR c.l.s.LocationServiceImpl [main] Error retrieving current location of ISS from API: First exception
+2023-03-16 23:02:55,577 DEBUG c.l.s.LocationServiceImpl [main] Returning default location of (0,0)
+2023-03-16 23:02:55,586 DEBUG c.l.s.LocationServiceImpl [main] Returning last known location of ISS: [latitude=10.0, longitude=20.0]
+2023-03-16 23:02:55,655 DEBUG c.l.c.ISSLocationController [main] Getting current location of ISS...
+2023-03-16 23:02:55,670 DEBUG c.l.c.ISSLocationController [main] Getting current location of ISS...
+2023-03-16 23:02:55,672 ERROR c.l.c.ISSLocationController [main] Error getting current location of ISS: Something went wrong
+2023-03-16 23:03:08,365 DEBUG c.l.s.LocationServiceImpl [main] Retrieving current location of ISS from API...
+2023-03-16 23:03:08,385 ERROR c.l.s.LocationServiceImpl [main] Error retrieving current location of ISS from API: Exception while connecting ISS api
+2023-03-16 23:03:24,708 DEBUG c.l.s.LocationServiceImpl [main] Retrieving current location of ISS from API...
+2023-03-16 23:03:24,727 ERROR c.l.s.LocationServiceImpl [main] Error retrieving current location of ISS from API: Exception while connecting ISS api
+2023-03-16 23:24:21,257 INFO c.l.IssLocationApplication [restartedMain] Starting IssLocationApplication using Java 17.0.4.1 with PID 4248 (C:\Users\HP\Documents\casestudy\ISS_Location\target\classes started by HP in C:\Users\HP\Documents\casestudy\ISS_Location)
+2023-03-16 23:24:21,277 DEBUG c.l.IssLocationApplication [restartedMain] Running with Spring Boot v3.0.4, Spring v6.0.6
+2023-03-16 23:24:21,281 INFO c.l.IssLocationApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-03-16 23:24:24,543 INFO c.l.IssLocationApplication [restartedMain] Started IssLocationApplication in 3.738 seconds (process running for 4.953)
+2023-03-16 23:24:43,140 DEBUG c.l.c.ISSLocationController [http-nio-8080-exec-1] Getting current location of ISS...
+2023-03-16 23:24:43,172 DEBUG c.l.s.LocationServiceImpl [http-nio-8080-exec-1] Retrieving current location of ISS from API...
+2023-03-16 23:24:45,063 DEBUG c.l.s.LocationServiceImpl [http-nio-8080-exec-1] Retrieved current location of ISS from API: [latitude=48.919335121969, longitude=99.196065428208]
+2023-03-16 23:30:01,638 INFO c.l.IssLocationApplication [restartedMain] Starting IssLocationApplication using Java 17.0.4.1 with PID 4248 (C:\Users\HP\Documents\casestudy\ISS_Location\target\classes started by HP in C:\Users\HP\Documents\casestudy\ISS_Location)
+2023-03-16 23:30:01,640 DEBUG c.l.IssLocationApplication [restartedMain] Running with Spring Boot v3.0.4, Spring v6.0.6
+2023-03-16 23:30:01,641 INFO c.l.IssLocationApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-03-16 23:30:02,369 INFO c.l.IssLocationApplication [restartedMain] Started IssLocationApplication in 0.784 seconds (process running for 342.779)
+2023-03-16 23:32:33,823 INFO c.l.IssLocationApplication [restartedMain] Starting IssLocationApplication using Java 17.0.4.1 with PID 4248 (C:\Users\HP\Documents\casestudy\ISS_Location\target\classes started by HP in C:\Users\HP\Documents\casestudy\ISS_Location)
+2023-03-16 23:32:33,825 DEBUG c.l.IssLocationApplication [restartedMain] Running with Spring Boot v3.0.4, Spring v6.0.6
+2023-03-16 23:32:33,825 INFO c.l.IssLocationApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-03-16 23:32:34,516 INFO c.l.IssLocationApplication [restartedMain] Started IssLocationApplication in 0.781 seconds (process running for 494.926)
+2023-03-16 23:32:54,468 INFO c.l.IssLocationApplication [restartedMain] Starting IssLocationApplication using Java 17.0.4.1 with PID 7624 (C:\Users\HP\Documents\casestudy\ISS_Location\target\classes started by HP in C:\Users\HP\Documents\casestudy\ISS_Location)
+2023-03-16 23:32:54,486 DEBUG c.l.IssLocationApplication [restartedMain] Running with Spring Boot v3.0.4, Spring v6.0.6
+2023-03-16 23:32:54,490 INFO c.l.IssLocationApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-03-16 23:32:57,622 INFO c.l.IssLocationApplication [restartedMain] Started IssLocationApplication in 3.595 seconds (process running for 4.69)
+2023-03-16 23:33:14,606 DEBUG c.l.c.ISSLocationController [http-nio-8080-exec-1] Getting current location of ISS...
+2023-03-16 23:33:14,637 DEBUG c.l.s.LocationServiceImpl [http-nio-8080-exec-1] Retrieving current location of ISS from API...
+2023-03-16 23:33:16,522 DEBUG c.l.s.LocationServiceImpl [http-nio-8080-exec-1] Retrieved current location of ISS from API: [latitude=30.674018664891, longitude=133.72938761333]
+2023-03-16 23:39:02,840 INFO c.l.IssLocationApplication [restartedMain] Starting IssLocationApplication using Java 17.0.4.1 with PID 7624 (C:\Users\HP\Documents\casestudy\ISS_Location\target\classes started by HP in C:\Users\HP\Documents\casestudy\ISS_Location)
+2023-03-16 23:39:02,841 DEBUG c.l.IssLocationApplication [restartedMain] Running with Spring Boot v3.0.4, Spring v6.0.6
+2023-03-16 23:39:02,841 INFO c.l.IssLocationApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-03-16 23:39:03,618 INFO c.l.IssLocationApplication [restartedMain] Started IssLocationApplication in 0.837 seconds (process running for 370.686)
+2023-03-16 23:39:16,760 DEBUG c.l.c.ISSLocationController [http-nio-8080-exec-2] Getting current location of ISS...
+2023-03-16 23:39:16,760 DEBUG c.l.s.LocationServiceImpl [http-nio-8080-exec-2] Retrieving current location of ISS from API...
+2023-03-16 23:39:17,710 ERROR c.l.s.LocationServiceImpl [http-nio-8080-exec-2] Error retrieving current location of ISS from API: 404 Not Found: "{"error":"satellite not found","status":404}"
+2023-03-16 23:39:17,710 DEBUG c.l.s.LocationServiceImpl [http-nio-8080-exec-2] Returning default location of (0,0)
+2023-03-16 23:39:28,646 INFO c.l.IssLocationApplication [restartedMain] Starting IssLocationApplication using Java 17.0.4.1 with PID 7624 (C:\Users\HP\Documents\casestudy\ISS_Location\target\classes started by HP in C:\Users\HP\Documents\casestudy\ISS_Location)
+2023-03-16 23:39:28,648 DEBUG c.l.IssLocationApplication [restartedMain] Running with Spring Boot v3.0.4, Spring v6.0.6
+2023-03-16 23:39:28,649 INFO c.l.IssLocationApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-03-16 23:39:29,379 INFO c.l.IssLocationApplication [restartedMain] Started IssLocationApplication in 0.829 seconds (process running for 396.448)
+2023-03-16 23:39:41,186 DEBUG c.l.c.ISSLocationController [http-nio-8080-exec-2] Getting current location of ISS...
+2023-03-16 23:39:41,186 DEBUG c.l.s.LocationServiceImpl [http-nio-8080-exec-2] Retrieving current location of ISS from API...
+2023-03-16 23:39:42,108 DEBUG c.l.s.LocationServiceImpl [http-nio-8080-exec-2] Retrieved current location of ISS from API: [latitude=12.087589740271, longitude=150.21953552525]
+2023-03-16 23:43:48,933 INFO c.l.IssLocationApplication [restartedMain] Starting IssLocationApplication using Java 17.0.4.1 with PID 7624 (C:\Users\HP\Documents\casestudy\ISS_Location\target\classes started by HP in C:\Users\HP\Documents\casestudy\ISS_Location)
+2023-03-16 23:43:48,934 DEBUG c.l.IssLocationApplication [restartedMain] Running with Spring Boot v3.0.4, Spring v6.0.6
+2023-03-16 23:43:48,934 INFO c.l.IssLocationApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-03-16 23:43:49,511 INFO c.l.IssLocationApplication [restartedMain] Started IssLocationApplication in 0.639 seconds (process running for 656.58)
+2023-03-16 23:43:53,898 DEBUG c.l.c.ISSLocationController [http-nio-8080-exec-2] Getting current location of ISS...
+2023-03-16 23:43:53,902 DEBUG c.l.s.LocationServiceImpl [http-nio-8080-exec-2] Retrieving current location of ISS from API...
+2023-03-16 23:43:54,837 ERROR c.l.s.LocationServiceImpl [http-nio-8080-exec-2] Error retrieving current location of ISS from API: / by zero
+2023-03-16 23:43:54,838 DEBUG c.l.s.LocationServiceImpl [http-nio-8080-exec-2] Returning default location of (0,0)
+2023-03-16 23:44:27,627 INFO c.l.IssLocationApplication [restartedMain] Starting IssLocationApplication using Java 17.0.4.1 with PID 7624 (C:\Users\HP\Documents\casestudy\ISS_Location\target\classes started by HP in C:\Users\HP\Documents\casestudy\ISS_Location)
+2023-03-16 23:44:27,629 DEBUG c.l.IssLocationApplication [restartedMain] Running with Spring Boot v3.0.4, Spring v6.0.6
+2023-03-16 23:44:27,630 INFO c.l.IssLocationApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-03-16 23:44:28,311 INFO c.l.IssLocationApplication [restartedMain] Started IssLocationApplication in 0.767 seconds (process running for 695.379)
+2023-03-16 23:44:36,926 INFO c.l.IssLocationApplication [restartedMain] Starting IssLocationApplication using Java 17.0.4.1 with PID 7624 (C:\Users\HP\Documents\casestudy\ISS_Location\target\classes started by HP in C:\Users\HP\Documents\casestudy\ISS_Location)
+2023-03-16 23:44:36,928 DEBUG c.l.IssLocationApplication [restartedMain] Running with Spring Boot v3.0.4, Spring v6.0.6
+2023-03-16 23:44:36,928 INFO c.l.IssLocationApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-03-16 23:44:37,508 INFO c.l.IssLocationApplication [restartedMain] Started IssLocationApplication in 0.625 seconds (process running for 704.577)
+2023-03-16 23:52:33,555 INFO c.l.IssLocationApplication [restartedMain] Starting IssLocationApplication using Java 17.0.4.1 with PID 7624 (C:\Users\HP\Documents\casestudy\ISS_Location\target\classes started by HP in C:\Users\HP\Documents\casestudy\ISS_Location)
+2023-03-16 23:52:33,556 DEBUG c.l.IssLocationApplication [restartedMain] Running with Spring Boot v3.0.4, Spring v6.0.6
+2023-03-16 23:52:33,556 INFO c.l.IssLocationApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-03-16 23:52:34,065 INFO c.l.IssLocationApplication [restartedMain] Started IssLocationApplication in 0.566 seconds (process running for 1181.133)
+2023-03-16 23:53:06,094 INFO c.l.IssLocationApplication [restartedMain] Starting IssLocationApplication using Java 17.0.4.1 with PID 7624 (C:\Users\HP\Documents\casestudy\ISS_Location\target\classes started by HP in C:\Users\HP\Documents\casestudy\ISS_Location)
+2023-03-16 23:53:06,095 DEBUG c.l.IssLocationApplication [restartedMain] Running with Spring Boot v3.0.4, Spring v6.0.6
+2023-03-16 23:53:06,095 INFO c.l.IssLocationApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-03-16 23:53:06,508 INFO c.l.IssLocationApplication [restartedMain] Started IssLocationApplication in 0.455 seconds (process running for 1213.576)
+2023-03-16 23:54:10,064 INFO c.l.IssLocationApplication [restartedMain] Starting IssLocationApplication using Java 17.0.4.1 with PID 7624 (C:\Users\HP\Documents\casestudy\ISS_Location\target\classes started by HP in C:\Users\HP\Documents\casestudy\ISS_Location)
+2023-03-16 23:54:10,065 DEBUG c.l.IssLocationApplication [restartedMain] Running with Spring Boot v3.0.4, Spring v6.0.6
+2023-03-16 23:54:10,066 INFO c.l.IssLocationApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-03-16 23:54:10,519 INFO c.l.IssLocationApplication [restartedMain] Started IssLocationApplication in 0.494 seconds (process running for 1277.587)
+2023-03-16 23:59:40,611 INFO c.l.IssLocationApplication [restartedMain] Starting IssLocationApplication using Java 17.0.4.1 with PID 7624 (C:\Users\HP\Documents\casestudy\ISS_Location\target\classes started by HP in C:\Users\HP\Documents\casestudy\ISS_Location)
+2023-03-16 23:59:40,613 DEBUG c.l.IssLocationApplication [restartedMain] Running with Spring Boot v3.0.4, Spring v6.0.6
+2023-03-16 23:59:40,614 INFO c.l.IssLocationApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-03-16 23:59:41,032 INFO c.l.IssLocationApplication [restartedMain] Started IssLocationApplication in 0.471 seconds (process running for 1608.101)
+2023-03-17 00:00:25,289 INFO c.l.IssLocationApplication [restartedMain] Starting IssLocationApplication using Java 17.0.4.1 with PID 7624 (C:\Users\HP\Documents\casestudy\ISS_Location\target\classes started by HP in C:\Users\HP\Documents\casestudy\ISS_Location)
+2023-03-17 00:00:25,289 DEBUG c.l.IssLocationApplication [restartedMain] Running with Spring Boot v3.0.4, Spring v6.0.6
+2023-03-17 00:00:25,290 INFO c.l.IssLocationApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-03-17 00:00:25,593 INFO c.l.IssLocationApplication [restartedMain] Started IssLocationApplication in 0.341 seconds (process running for 1652.661)
+2023-03-17 00:03:14,536 INFO c.l.IssLocationApplication [restartedMain] Starting IssLocationApplication using Java 17.0.4.1 with PID 20088 (C:\Users\HP\Documents\casestudy\ISS_Location\target\classes started by HP in C:\Users\HP\Documents\casestudy\ISS_Location)
+2023-03-17 00:03:14,552 DEBUG c.l.IssLocationApplication [restartedMain] Running with Spring Boot v3.0.4, Spring v6.0.6
+2023-03-17 00:03:14,555 INFO c.l.IssLocationApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-03-17 00:03:17,624 INFO c.l.IssLocationApplication [restartedMain] Started IssLocationApplication in 3.557 seconds (process running for 4.703)
+2023-03-17 00:03:27,571 DEBUG c.l.s.LocationServiceImpl [main] Retrieving current location of ISS from API
+2023-03-17 00:03:27,593 ERROR c.l.s.LocationServiceImpl [main] Error retrieving current location of ISS from API: Exception while connecting ISS api
+2023-03-17 00:05:35,446 DEBUG c.l.s.LocationServiceImpl [main] Retrieving current location of ISS from API
+2023-03-17 00:05:35,463 ERROR c.l.s.LocationServiceImpl [main] Error retrieving current location of ISS from API: Exception while connecting ISS api
+2023-03-17 00:05:45,037 DEBUG c.l.s.LocationServiceImpl [main] Retrieving current location of ISS from API
+2023-03-17 00:05:45,064 ERROR c.l.s.LocationServiceImpl [main] Error retrieving current location of ISS from API: Exception while connecting ISS api
+2023-03-17 00:06:56,660 DEBUG c.l.s.LocationServiceImpl [main] Retrieving current location of ISS from API
+2023-03-17 00:06:56,684 ERROR c.l.s.LocationServiceImpl [main] Error retrieving current location of ISS from API: Exception while connecting ISS api
+2023-03-17 00:07:19,837 DEBUG c.l.s.LocationServiceImpl [main] Retrieving current location of ISS from API
+2023-03-17 00:07:19,873 DEBUG c.l.s.LocationServiceImpl [main] Retrieved current location of ISS from API: [latitude=10.0, longitude=20.0]
+2023-03-17 00:07:19,943 DEBUG c.l.s.LocationServiceImpl [main] Retrieving current location of ISS from API
+2023-03-17 00:07:19,948 ERROR c.l.s.LocationServiceImpl [main] Error retrieving current location of ISS from API: Exception while connecting ISS api
+2023-03-17 00:07:19,966 DEBUG c.l.s.LocationServiceImpl [main] Retrieving current location of ISS from API
+2023-03-17 00:07:19,967 ERROR c.l.s.LocationServiceImpl [main] Error retrieving current location of ISS from API: First exception
+2023-03-17 00:07:19,975 DEBUG c.l.s.LocationServiceImpl [main] Returning default location of (0.0,0.0)
+2023-03-17 00:07:19,982 DEBUG c.l.s.LocationServiceImpl [main] Returning last known location of ISS: [latitude=10.0, longitude=20.0]
+2023-03-17 00:08:25,910 DEBUG c.l.s.LocationServiceImpl [main] Returning default location of (0.0,0.0)
+2023-03-17 00:08:25,981 DEBUG c.l.s.LocationServiceImpl [main] Returning last known location of ISS: [latitude=10.0, longitude=20.0]
+2023-03-17 00:09:08,349 DEBUG c.l.s.LocationServiceImpl [main] Retrieving current location of ISS from API
+2023-03-17 00:09:08,386 DEBUG c.l.s.LocationServiceImpl [main] Retrieved current location of ISS from API: [latitude=10.0, longitude=20.0]
+2023-03-17 00:09:08,438 DEBUG c.l.s.LocationServiceImpl [main] Retrieving current location of ISS from API
+2023-03-17 00:09:08,442 ERROR c.l.s.LocationServiceImpl [main] Error retrieving current location of ISS from API: Exception while connecting ISS api
+2023-03-17 00:09:08,458 DEBUG c.l.s.LocationServiceImpl [main] Retrieving current location of ISS from API
+2023-03-17 00:09:08,460 ERROR c.l.s.LocationServiceImpl [main] Error retrieving current location of ISS from API: First exception
+2023-03-17 00:09:08,466 DEBUG c.l.s.LocationServiceImpl [main] Returning default location of (0.0,0.0)
+2023-03-17 00:09:08,474 DEBUG c.l.s.LocationServiceImpl [main] Returning last known location of ISS: [latitude=10.0, longitude=20.0]
+2023-03-17 00:09:54,968 DEBUG c.l.s.LocationServiceImpl [main] Retrieving current location of ISS from API
+2023-03-17 00:09:55,011 DEBUG c.l.s.LocationServiceImpl [main] Retrieved current location of ISS from API: [latitude=10.0, longitude=20.0]
+2023-03-17 00:09:55,070 DEBUG c.l.s.LocationServiceImpl [main] Retrieving current location of ISS from API
+2023-03-17 00:09:55,072 ERROR c.l.s.LocationServiceImpl [main] Error retrieving current location of ISS from API: Exception while connecting ISS api
+2023-03-17 00:09:55,087 DEBUG c.l.s.LocationServiceImpl [main] Retrieving current location of ISS from API
+2023-03-17 00:09:55,089 ERROR c.l.s.LocationServiceImpl [main] Error retrieving current location of ISS from API: First exception
+2023-03-17 00:09:55,096 DEBUG c.l.s.LocationServiceImpl [main] Returning default location of (0.0,0.0)
+2023-03-17 00:09:55,103 DEBUG c.l.s.LocationServiceImpl [main] Returning last known location of ISS: [latitude=10.0, longitude=20.0]
+2023-03-17 00:10:40,409 DEBUG c.l.s.LocationServiceImpl [main] Retrieving current location of ISS from API
+2023-03-17 00:10:40,451 DEBUG c.l.s.LocationServiceImpl [main] Retrieved current location of ISS from API: [latitude=10.0, longitude=20.0]
+2023-03-17 00:10:40,507 DEBUG c.l.s.LocationServiceImpl [main] Retrieving current location of ISS from API
+2023-03-17 00:10:40,509 ERROR c.l.s.LocationServiceImpl [main] Error retrieving current location of ISS from API: Exception while connecting ISS api
+2023-03-17 00:10:40,523 DEBUG c.l.s.LocationServiceImpl [main] Retrieving current location of ISS from API
+2023-03-17 00:10:40,524 ERROR c.l.s.LocationServiceImpl [main] Error retrieving current location of ISS from API: First exception
+2023-03-17 00:10:40,530 DEBUG c.l.s.LocationServiceImpl [main] Returning default location of (0.0,0.0)
+2023-03-17 00:10:40,537 DEBUG c.l.s.LocationServiceImpl [main] Returning last known location of ISS: [latitude=10.0, longitude=20.0]
+2023-03-17 00:11:00,766 DEBUG c.l.s.LocationServiceImpl [main] Retrieving current location of ISS from API
+2023-03-17 00:11:00,804 DEBUG c.l.s.LocationServiceImpl [main] Retrieved current location of ISS from API: [latitude=10.0, longitude=20.0]
+2023-03-17 00:11:00,861 DEBUG c.l.s.LocationServiceImpl [main] Retrieving current location of ISS from API
+2023-03-17 00:11:00,865 ERROR c.l.s.LocationServiceImpl [main] Error retrieving current location of ISS from API: Exception while connecting ISS api
+2023-03-17 00:11:00,883 DEBUG c.l.s.LocationServiceImpl [main] Retrieving current location of ISS from API
+2023-03-17 00:11:00,885 ERROR c.l.s.LocationServiceImpl [main] Error retrieving current location of ISS from API: First exception
+2023-03-17 00:11:00,892 DEBUG c.l.s.LocationServiceImpl [main] Returning default location of (0.0,0.0)
+2023-03-17 00:11:00,900 DEBUG c.l.s.LocationServiceImpl [main] Returning last known location of ISS: [latitude=10.0, longitude=20.0]
+2023-03-17 00:26:30,133 DEBUG c.l.s.LocationServiceImpl [main] Returning default location of (0.0,0.0)
+2023-03-17 00:26:30,182 DEBUG c.l.s.LocationServiceImpl [main] Returning last known location of ISS: [latitude=10.0, longitude=20.0]
+2023-03-17 00:27:10,520 DEBUG c.l.s.LocationServiceImpl [main] Retrieving current location of ISS from API
+2023-03-17 00:27:10,556 DEBUG c.l.s.LocationServiceImpl [main] Retrieved current location of ISS from API: [latitude=10.0, longitude=20.0]
+2023-03-17 00:27:10,609 DEBUG c.l.s.LocationServiceImpl [main] Retrieving current location of ISS from API
+2023-03-17 00:27:10,611 ERROR c.l.s.LocationServiceImpl [main] Error retrieving current location of ISS from API: Exception while connecting ISS api
+2023-03-17 00:27:10,632 DEBUG c.l.s.LocationServiceImpl [main] Retrieving current location of ISS from API
+2023-03-17 00:27:10,634 ERROR c.l.s.LocationServiceImpl [main] Error retrieving current location of ISS from API: First exception
+2023-03-17 00:27:10,641 DEBUG c.l.s.LocationServiceImpl [main] Returning default location of (0.0,0.0)
+2023-03-17 00:27:10,647 DEBUG c.l.s.LocationServiceImpl [main] Returning last known location of ISS: [latitude=10.0, longitude=20.0]
+2023-03-17 01:09:03,225 DEBUG c.l.s.LocationServiceImpl [main] Retrieving current location of ISS from API
+2023-03-17 01:09:03,266 DEBUG c.l.s.LocationServiceImpl [main] Retrieved current location of ISS from API: [latitude=10.0, longitude=20.0]
+2023-03-17 01:09:03,324 DEBUG c.l.s.LocationServiceImpl [main] Retrieving current location of ISS from API
+2023-03-17 01:09:03,328 ERROR c.l.s.LocationServiceImpl [main] Error retrieving current location of ISS from API: Exception while connecting ISS api
+2023-03-17 01:09:03,351 DEBUG c.l.s.LocationServiceImpl [main] Retrieving current location of ISS from API
+2023-03-17 01:09:03,353 ERROR c.l.s.LocationServiceImpl [main] Error retrieving current location of ISS from API: First exception
+2023-03-17 01:09:03,359 DEBUG c.l.s.LocationServiceImpl [main] Returning default location of (0.0,0.0)
+2023-03-17 01:09:03,370 DEBUG c.l.s.LocationServiceImpl [main] Returning last known location of ISS: [latitude=10.0, longitude=20.0]
+2023-03-17 01:09:03,460 DEBUG c.l.c.ISSLocationController [main] Getting current location of ISS
+2023-03-17 01:09:03,474 DEBUG c.l.c.ISSLocationController [main] Getting current location of ISS
+2023-03-17 01:09:03,477 ERROR c.l.c.ISSLocationController [main] Error getting current location of ISS: Something went wrong
+2023-03-17 01:12:17,913 DEBUG c.l.s.LocationServiceImpl [main] Retrieving current location of ISS from API
+2023-03-17 01:12:17,951 DEBUG c.l.s.LocationServiceImpl [main] Retrieved current location of ISS from API: [latitude=10.0, longitude=20.0]
+2023-03-17 01:12:18,006 DEBUG c.l.s.LocationServiceImpl [main] Retrieving current location of ISS from API
+2023-03-17 01:12:18,009 ERROR c.l.s.LocationServiceImpl [main] Error retrieving current location of ISS from API: Exception while connecting ISS api
+2023-03-17 01:12:18,024 DEBUG c.l.s.LocationServiceImpl [main] Retrieving current location of ISS from API
+2023-03-17 01:12:18,025 ERROR c.l.s.LocationServiceImpl [main] Error retrieving current location of ISS from API: 404 NOT_FOUND - [latitude=10.0, longitude=20.0]
+2023-03-17 01:12:18,040 DEBUG c.l.s.LocationServiceImpl [main] Retrieving current location of ISS from API
+2023-03-17 01:12:18,041 ERROR c.l.s.LocationServiceImpl [main] Error retrieving current location of ISS from API: First exception
+2023-03-17 01:12:18,046 DEBUG c.l.s.LocationServiceImpl [main] Returning default location of (0.0,0.0)
+2023-03-17 01:12:18,054 DEBUG c.l.s.LocationServiceImpl [main] Returning last known location of ISS: [latitude=10.0, longitude=20.0]
+2023-03-17 01:12:18,129 DEBUG c.l.c.ISSLocationController [main] Getting current location of ISS
+2023-03-17 01:12:18,148 DEBUG c.l.c.ISSLocationController [main] Getting current location of ISS
+2023-03-17 01:12:18,150 ERROR c.l.c.ISSLocationController [main] Error getting current location of ISS: Something went wrong
+2023-03-17 01:13:52,719 DEBUG c.l.s.LocationServiceImpl [main] Retrieving current location of ISS from API
+2023-03-17 01:13:52,749 DEBUG c.l.s.LocationServiceImpl [main] Retrieved current location of ISS from API: [latitude=10.0, longitude=20.0]
+2023-03-17 01:13:52,804 DEBUG c.l.s.LocationServiceImpl [main] Retrieving current location of ISS from API
+2023-03-17 01:13:52,808 ERROR c.l.s.LocationServiceImpl [main] Error retrieving current location of ISS from API: Exception while connecting ISS api
+2023-03-17 01:13:52,826 DEBUG c.l.s.LocationServiceImpl [main] Retrieving current location of ISS from API
+2023-03-17 01:13:52,828 ERROR c.l.s.LocationServiceImpl [main] Error retrieving current location of ISS from API: 404 NOT_FOUND - [latitude=10.0, longitude=20.0]
+2023-03-17 01:13:52,844 DEBUG c.l.s.LocationServiceImpl [main] Retrieving current location of ISS from API
+2023-03-17 01:13:52,847 ERROR c.l.s.LocationServiceImpl [main] Error retrieving current location of ISS from API: First exception
+2023-03-17 01:13:52,854 DEBUG c.l.s.LocationServiceImpl [main] Returning default location of (0.0,0.0)
+2023-03-17 01:13:52,860 DEBUG c.l.s.LocationServiceImpl [main] Returning last known location of ISS: [latitude=10.0, longitude=20.0]
+2023-03-17 01:13:52,938 DEBUG c.l.c.ISSLocationController [main] Getting current location of ISS
+2023-03-17 01:13:52,954 DEBUG c.l.c.ISSLocationController [main] Getting current location of ISS
+2023-03-17 01:13:52,956 ERROR c.l.c.ISSLocationController [main] Error getting current location of ISS: Something went wrong
+2023-03-17 01:14:12,095 DEBUG c.l.s.LocationServiceImpl [main] Retrieving current location of ISS from API
+2023-03-17 01:14:12,142 DEBUG c.l.s.LocationServiceImpl [main] Retrieved current location of ISS from API: [latitude=10.0, longitude=20.0]
+2023-03-17 01:14:12,197 DEBUG c.l.s.LocationServiceImpl [main] Retrieving current location of ISS from API
+2023-03-17 01:14:12,200 ERROR c.l.s.LocationServiceImpl [main] Error retrieving current location of ISS from API: Exception while connecting ISS api
+2023-03-17 01:14:12,216 DEBUG c.l.s.LocationServiceImpl [main] Retrieving current location of ISS from API
+2023-03-17 01:14:12,217 ERROR c.l.s.LocationServiceImpl [main] Error retrieving current location of ISS from API: 404 NOT_FOUND - [latitude=10.0, longitude=20.0]
+2023-03-17 01:14:12,232 DEBUG c.l.s.LocationServiceImpl [main] Retrieving current location of ISS from API
+2023-03-17 01:14:12,234 ERROR c.l.s.LocationServiceImpl [main] Error retrieving current location of ISS from API: First exception
+2023-03-17 01:14:12,241 DEBUG c.l.s.LocationServiceImpl [main] Returning default location of (0.0,0.0)
+2023-03-17 01:14:12,248 DEBUG c.l.s.LocationServiceImpl [main] Returning last known location of ISS: [latitude=10.0, longitude=20.0]
+2023-03-17 01:14:12,329 DEBUG c.l.c.ISSLocationController [main] Getting current location of ISS
+2023-03-17 01:14:12,355 DEBUG c.l.c.ISSLocationController [main] Getting current location of ISS
+2023-03-17 01:14:12,363 ERROR c.l.c.ISSLocationController [main] Error getting current location of ISS: Something went wrong
+2023-03-17 01:15:04,035 DEBUG c.l.s.LocationServiceImpl [main] Retrieving current location of ISS from API
+2023-03-17 01:15:04,060 DEBUG c.l.s.LocationServiceImpl [main] Retrieved current location of ISS from API: [latitude=10.0, longitude=20.0]
+2023-03-17 01:15:04,111 DEBUG c.l.s.LocationServiceImpl [main] Retrieving current location of ISS from API
+2023-03-17 01:15:04,114 ERROR c.l.s.LocationServiceImpl [main] Error retrieving current location of ISS from API: Exception while connecting ISS api
+2023-03-17 01:15:04,132 DEBUG c.l.s.LocationServiceImpl [main] Retrieving current location of ISS from API
+2023-03-17 01:15:04,134 ERROR c.l.s.LocationServiceImpl [main] Error retrieving current location of ISS from API: 404 NOT_FOUND - [latitude=10.0, longitude=20.0]
+2023-03-17 01:15:04,148 DEBUG c.l.s.LocationServiceImpl [main] Retrieving current location of ISS from API
+2023-03-17 01:15:04,152 ERROR c.l.s.LocationServiceImpl [main] Error retrieving current location of ISS from API: First exception
+2023-03-17 01:15:04,159 DEBUG c.l.s.LocationServiceImpl [main] Returning default location of (0.0,0.0)
+2023-03-17 01:15:04,168 DEBUG c.l.s.LocationServiceImpl [main] Returning last known location of ISS: [latitude=10.0, longitude=20.0]
+2023-03-17 01:15:04,236 DEBUG c.l.c.ISSLocationController [main] Getting current location of ISS
+2023-03-17 01:15:04,250 DEBUG c.l.c.ISSLocationController [main] Getting current location of ISS
+2023-03-17 01:15:04,251 ERROR c.l.c.ISSLocationController [main] Error getting current location of ISS: Something went wrong
+2023-03-17 01:15:19,279 DEBUG c.l.s.LocationServiceImpl [main] Retrieving current location of ISS from API
+2023-03-17 01:15:19,302 ERROR c.l.s.LocationServiceImpl [main] Error retrieving current location of ISS from API: Exception while connecting ISS api
+2023-03-17 01:15:35,494 DEBUG c.l.s.LocationServiceImpl [main] Retrieving current location of ISS from API
+2023-03-17 01:15:35,516 ERROR c.l.s.LocationServiceImpl [main] Error retrieving current location of ISS from API: Exception while connecting ISS api
+2023-03-17 01:15:43,747 DEBUG c.l.s.LocationServiceImpl [main] Retrieving current location of ISS from API
+2023-03-17 01:15:43,767 ERROR c.l.s.LocationServiceImpl [main] Error retrieving current location of ISS from API: Exception while connecting ISS api

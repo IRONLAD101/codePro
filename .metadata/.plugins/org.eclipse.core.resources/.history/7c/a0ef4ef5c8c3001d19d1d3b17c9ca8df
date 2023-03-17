@@ -1,0 +1,24 @@
+package com.location.response;
+
+import java.io.Serializable;
+
+import com.fasterxml.jackson.annotation.JsonAlias;
+
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+public class ISSLocation implements Serializable{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	@JsonAlias(value = "latitude")
+	private String latitude;
+	
+	@JsonAlias(value = "longitude")
+	private String longitude;
+	
+}

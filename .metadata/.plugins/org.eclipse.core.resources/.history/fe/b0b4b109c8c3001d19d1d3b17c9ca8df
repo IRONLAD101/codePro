@@ -1,0 +1,18 @@
+package com.location.response;
+
+import com.fasterxml.jackson.annotation.JsonAlias;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class ISSLocation {
+	@JsonAlias(value = "latitude")
+	private String latitude;
+	
+	@JsonAlias(value = "longitude")
+	private String longitude;
+}

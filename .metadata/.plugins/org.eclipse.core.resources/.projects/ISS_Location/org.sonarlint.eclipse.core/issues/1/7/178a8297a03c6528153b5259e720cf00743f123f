@@ -1,0 +1,9 @@
+
+
+java:S1104""]Make lastKnownLocation a static final constant or non-public and provide accessors if needed.(ÛŸ‡8ßÊÆÙî0H«	RMINORZ
+CODE_SMELL
+¶
+java:S1130K"‰Remove the declaration of thrown exception 'com.location.exceptions.LocationServiceException', as it cannot be thrown from method's body.(Œ¶ÌÂHäRMINORZ
+CODE_SMELL
+‚	java:S116"RRename this field "API_URL" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(é—÷óüÿÿÿÿHêRMINORZ
+CODE_SMELL

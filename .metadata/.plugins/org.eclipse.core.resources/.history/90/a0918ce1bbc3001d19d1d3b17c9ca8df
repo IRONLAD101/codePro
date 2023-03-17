@@ -1,0 +1,5 @@
+package com.location.exceptions;
+
+public class LocationServiceException extends Exception {
+
+}
