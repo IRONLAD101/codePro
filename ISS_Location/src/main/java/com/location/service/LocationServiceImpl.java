@@ -27,12 +27,12 @@ public class LocationServiceImpl implements LocationService {
 
 	private static final Logger logger = LogManager.getLogger(LocationServiceImpl.class);
 
-	private static final int MAX_RETRIES = 1;
+	private static final int MAX_RETRIES = 2;
 
 	private static final long RETRY_BACKOFF_MS = 1000;
 	
 	public ISSLocation lastKnownLocation;
-	
+		
 	/**
      * Retrieves the current location of the International Space Station.
      * If the API is down, retries once. If the retry fails, returns the last known location
